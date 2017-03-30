@@ -1,0 +1,216 @@
+doctype html
+html(lang='ru')
+	head
+		title profile_my_quotations
+
+		include ./partials/head.jade
+
+	body
+		include ./partials/noscript.jade
+		include ./partials/top-line-profile.jade
+
+
+		include ./partials/breadcrumbs.jade
+
+		section.content
+			.container
+				.content-body.inline-layout
+					.aside-panel
+						.panel-1.prof
+							h3 Мой профиль
+							.my-prof-cart
+								.image-holder
+									img(src="img/content/profile-photo.png", alt="")
+								h3 Анна Дорофеева
+								p Телефон: +380932596726
+								p E-mail: dorofeeva@gmail.com
+								p Количество книг: 9
+						.panel-1.popul
+							h3 Популярные Статьи
+							ul
+								li
+									a(href="#")
+										.image-holder
+											img(src="img/content/pop-1.png", alt="")
+										span 9 декабря 2016
+										p Какой формат книг вам подходит?
+								li
+									a(href="#")
+										.image-holder
+											img(src="img/content/pop-2.png", alt="")
+										span 1 декабля 2016
+										p 5 самых лучших книг, которые стоит прочитать зимними вечерами
+								li
+									a(href="#")
+										.image-holder
+											img(src="img/content/pop-3.png", alt="")
+										span 26 ноября 2016
+										p Топ-20 книг, о прочтении которых лгут чаще всего
+						.panel-1.announc
+							h3 Анонс
+							ul
+								li
+									a(href="#")
+										.image-holder
+											img(src="img/content/anounc-1.png", alt="")
+										p Что сделала бы Грейс?
+										span Джина Маккинон
+								li
+									a(href="#")
+										.image-holder
+											img(src="img/content/anounc-2.png", alt="")
+										p Леди из "Миссолонги"
+										span Колин Маккалоу
+								li
+									a(href="#")
+										.image-holder
+											img(src="img/content/anounc-3.png", alt="")
+										p Отбор
+										span Кира Касс
+						.panel-1
+							h3 Популярные Авторы
+							ul
+								li
+									a(href="#")
+										.image-holder
+											img(src="img/content/auhtor-1.png", alt="")
+										p Стивен Кинг
+										span 176 книг
+								li
+									a(href="#")
+										.image-holder
+											img(src="img/content/auhtor-2.png", alt="")
+										p Джорджо Мойес
+										span 176 книг
+								li
+									a(href="#")
+										.image-holder
+											img(src="img/content/auhtor-3.png", alt="")
+										p Макс Фрай
+										span 176 книг
+
+					.content-holder
+						
+						.profile-top
+							.profile-nav
+								ul
+									li
+										a(href="#") Мои книги
+									li
+										a(href="#").active Цитаты
+									li
+										a(href="#") Настройки
+						.quotations-body
+							.quotations-item
+								a(href="#").close-btn &#735;
+								p
+									|– Америка, я люблю тебя. – И я тебя. Воспоминаний об этих тайных мгновениях должно хватить, чтобы помочь мне выдержать все: мамино разочарование из-за моего провала на Отборе; работу, которой необходимо было заниматься, чтобы помочь Аспену накопить денег; неизбежный скандал, когда любимый придет к папе просить моей руки. 
+								.author
+									a(href="#") Джейн Эйр” Шарлотта Бронте
+									.socials-holder
+										ul
+											mixin socItem(src)
+												li
+													a(href="#")
+														img(src= src, alt= src)
+											+socItem('img/icons/vk-green.png')
+											+socItem('img/icons/twitter-green.png')
+											+socItem('img/icons/odnoklasniki-green.png')
+											+socItem('img/icons/instagram-green.png')
+											+socItem('img/icons/google+-green.png')
+											+socItem('img/icons/facebook-green.png')
+							.quotations-item
+								a(href="#").close-btn &#735;
+								p
+									|– Америка, я люблю тебя. – И я тебя. Воспоминаний об этих тайных мгновениях должно хватить, чтобы помочь мне выдержать все: мамино разочарование из-за моего провала на Отборе; работу, которой необходимо было заниматься, чтобы помочь Аспену накопить денег; неизбежный скандал, когда любимый придет к папе просить моей руки. 
+								.author
+									a(href="#") Джейн Эйр” Шарлотта Бронте
+									.socials-holder
+										ul
+											mixin socItem(src)
+												li
+													a(href="#")
+														img(src= src, alt= src)
+											+socItem('img/icons/vk-green.png')
+											+socItem('img/icons/twitter-green.png')
+											+socItem('img/icons/odnoklasniki-green.png')
+											+socItem('img/icons/instagram-green.png')
+											+socItem('img/icons/google+-green.png')
+											+socItem('img/icons/facebook-green.png')
+							.quotations-item
+								a(href="#").close-btn &#735;
+								p
+									|– Америка, я люблю тебя. – И я тебя. Воспоминаний об этих тайных мгновениях должно хватить, чтобы помочь мне выдержать все: мамино разочарование из-за моего провала на Отборе; работу, которой необходимо было заниматься, чтобы помочь Аспену накопить денег; неизбежный скандал, когда любимый придет к папе просить моей руки. 
+								.author
+									a(href="#") Джейн Эйр” Шарлотта Бронте
+									.socials-holder
+										ul
+											mixin socItem(src)
+												li
+													a(href="#")
+														img(src= src, alt= src)
+											+socItem('img/icons/vk-green.png')
+											+socItem('img/icons/twitter-green.png')
+											+socItem('img/icons/odnoklasniki-green.png')
+											+socItem('img/icons/instagram-green.png')
+											+socItem('img/icons/google+-green.png')
+											+socItem('img/icons/facebook-green.png')
+							.quotations-item
+								a(href="#").close-btn &#735;
+								p
+									|– Америка, я люблю тебя. – И я тебя. Воспоминаний об этих тайных мгновениях должно хватить, чтобы помочь мне выдержать все: мамино разочарование из-за моего провала на Отборе; работу, которой необходимо было заниматься, чтобы помочь Аспену накопить денег; неизбежный скандал, когда любимый придет к папе просить моей руки. 
+								.author
+									a(href="#") Джейн Эйр” Шарлотта Бронте
+									.socials-holder
+										ul
+											mixin socItem(src)
+												li
+													a(href="#")
+														img(src= src, alt= src)
+											+socItem('img/icons/vk-green.png')
+											+socItem('img/icons/twitter-green.png')
+											+socItem('img/icons/odnoklasniki-green.png')
+											+socItem('img/icons/instagram-green.png')
+											+socItem('img/icons/google+-green.png')
+											+socItem('img/icons/facebook-green.png')
+
+						.sale
+							.inline-layout.col-4
+								.sale-col
+									a(href="#")
+										.sale-item
+											.image-holder
+												img(src="img/content/sale-1.png", alt="")
+											.description
+												p
+													|Распродажа качественной женской обуви.
+								.sale-col
+									a(href="#")
+										.sale-item
+											.image-holder
+												img(src="img/content/sale-2.png", alt="")
+											.description
+												p
+													|Распродажа качественной женской обуви.
+								.sale-col
+									a(href="#")
+										.sale-item
+											.image-holder
+												img(src="img/content/sale-3.png", alt="")
+											.description
+												p
+													|Распродажа качественной женской обуви.
+								.sale-col
+									a(href="#")
+										.sale-item
+											.image-holder
+												img(src="img/content/sale-4.png", alt="")
+											.description
+												p
+													|Распродажа качественной женской обуви.
+
+
+							
+		include ./partials/footer.jade
+
+		include ./partials/scripts.jade

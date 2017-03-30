@@ -1,0 +1,31 @@
+section.footer
+		.container
+			.footer-description
+				.brand-holder
+					a(href="#") Books-online
+				p
+					|Несмотря на то, что в наши дни Интернет уверенно набирает позиции, все больше образованных и интеллигентных людей предпочитают проводить свободное время за чтением книг. Наш сайт предлагает совместить инновации «всемирной паутины» с «поглощением» литературных шедевров. Здесь Вы можете совершенно бесплатно и без регистрации читать онлайн как классические, так и современные тексты.
+				.metrics
+					.image-holder
+						img(src="img/content/metrics.png", alt="")
+				.footer-search
+					form(action="")
+						h4 Подписаться на рассылку
+						.search-holder
+							input(type="text", placeholder="Введите ваш e-mail:")
+							a(href="#") Отправить
+						.socials-holder
+							h4 Социальные сети
+							ul
+								mixin socItem(src)
+									li
+										a(href="#")
+											img(src= src, alt= src)
+								+socItem('img/icons/vk.png')
+								+socItem('img/icons/twitter.png')
+								+socItem('img/icons/odnoklasniki.png')
+								+socItem('img/icons/instagram.png')
+								+socItem('img/icons/google+.png')
+								+socItem('img/icons/facebook.png')
+				.copyright
+					h3 Books-online 2016

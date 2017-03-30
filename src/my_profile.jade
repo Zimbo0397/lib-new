@@ -1,0 +1,225 @@
+doctype html
+html(lang='ru')
+	head
+		title my_profile
+
+		include ./partials/head.jade
+
+	body
+		include ./partials/noscript.jade
+		include ./partials/top-line-profile.jade
+
+
+		include ./partials/breadcrumbs.jade
+
+		.black-plate
+
+		section.content
+			.container
+				.content-body.inline-layout
+					.aside-open#aside-open
+					.aside-panel#aside-panel
+						.close-btn#aside-slose
+						.panel-1.popul
+							h3 Популярные Статьи
+							ul
+								li
+									a(href="#")
+										.image-holder
+											img(src="img/content/pop-1.png", alt="")
+										span 9 декабря 2016
+										p Какой формат книг вам подходит?
+								li
+									a(href="#")
+										.image-holder
+											img(src="img/content/pop-2.png", alt="")
+										span 1 декабля 2016
+										p 5 самых лучших книг, которые стоит прочитать зимними вечерами
+								li
+									a(href="#")
+										.image-holder
+											img(src="img/content/pop-3.png", alt="")
+										span 26 ноября 2016
+										p Топ-20 книг, о прочтении которых лгут чаще всего
+						.panel-1.announc
+							h3 Анонс
+							ul
+								li
+									a(href="#")
+										.image-holder
+											img(src="img/content/anounc-1.png", alt="")
+										p Что сделала бы Грейс?
+										span Джина Маккинон
+								li
+									a(href="#")
+										.image-holder
+											img(src="img/content/anounc-2.png", alt="")
+										p Леди из "Миссолонги"
+										span Колин Маккалоу
+								li
+									a(href="#")
+										.image-holder
+											img(src="img/content/anounc-3.png", alt="")
+										p Отбор
+										span Кира Касс
+						.panel-1
+							h3 Популярные Авторы
+							ul
+								li
+									a(href="#")
+										.image-holder
+											img(src="img/content/auhtor-1.png", alt="")
+										p Стивен Кинг
+										span 176 книг
+								li
+									a(href="#")
+										.image-holder
+											img(src="img/content/auhtor-2.png", alt="")
+										p Джорджо Мойес
+										span 176 книг
+								li
+									a(href="#")
+										.image-holder
+											img(src="img/content/auhtor-3.png", alt="")
+										p Макс Фрай
+										span 176 книг
+								li
+									a(href="#")
+										.image-holder
+											img(src="img/content/auhtor-4.png", alt="")
+										p Ли Чайлд
+										span 176 книг
+								li
+									a(href="#")
+										.image-holder
+											img(src="img/content/auhtor-5.png", alt="")
+										p Анджей Сапковский
+										span 176 книг
+								li
+									a(href="#")
+										.image-holder
+											img(src="img/content/auhtor-6.png", alt="")
+										p Харуки Мураками
+										span 176 книг
+
+					.content-holder
+						
+						.profile-top
+							h3 Мой профиль
+							.profile-nav
+								ul
+									li
+										a(href="#") Мои книги
+									li
+										a(href="#") Цитаты
+									li
+										a(href="#").active Настройки
+						.profile-body
+							form(action="")
+								.add-foto
+									.image-holder
+										img(src="img/content/profile-photo.png", alt="")
+									h4 Анна Дорофеева
+									.btns
+										a(href="#").button.transp Загрузить фото
+								.add-info
+									.inline-layout
+										.forms-group
+											.form-group
+												label(for="") Имя:
+												input(type="text", placeholder="Имя")
+											.form-group
+												label(for="") Эл. почта:
+												input(type="text", placeholder="dorofeeva@gmail.com")
+										.forms-group
+											.form-group
+												label(for="") Фамилия:
+												input(type="text", placeholder="Фамилия")
+											.form-group
+												label(for="") Телефон:
+												input(type="text", placeholder="Телефон")
+
+								.add-info
+									h4 Смена пароля
+									.inline-layout
+										.forms-group
+											.form-group
+												label(for="") Старый:
+												input(type="text", placeholder="XXX")
+										.forms-group
+											.form-group
+												label(for="") Новый:
+												input(type="text", placeholder="XXX")
+								.add-info
+									h4 Подключение аккаунтов
+									ul.checkboxes.inline-layout
+										li
+											span Вконтакте
+											.checkbox
+												input(type="checkbox", id="checkbox")
+												label(for="checkbox")
+										li
+											span Однокласники
+											.checkbox
+												input(type="checkbox", id="checkbox1")
+												label(for="checkbox1")
+										li
+											span Facebook
+											.checkbox
+												input(type="checkbox", id="checkbox2")
+												label(for="checkbox2")
+										li
+											span Twitter
+											.checkbox
+												input(type="checkbox", id="checkbox3")
+												label(for="checkbox3")
+										li
+											span Instagram
+											.checkbox
+												input(type="checkbox", id="checkbox4")
+												label(for="checkbox4")
+										li
+											span Google+
+											.checkbox
+												input(type="checkbox", id="checkbox5")
+												label(for="checkbox5")
+									.btns
+										a(href="#").button Сохранить изменения
+
+
+						.sale.book
+							.inline-layout.col-4
+								.sale-col
+									.sale-item
+										.image-holder
+											img(src="img/content/sale-1.png", alt="")
+										.description
+											p
+												|Распродажа качественной женской обуви.
+								.sale-col
+									.sale-item
+										.image-holder
+											img(src="img/content/sale-2.png", alt="")
+										.description
+											p
+												|Распродажа качественной женской обуви.
+								.sale-col
+									.sale-item
+										.image-holder
+											img(src="img/content/sale-3.png", alt="")
+										.description
+											p
+												|Распродажа качественной женской обуви.
+								.sale-col
+									.sale-item
+										.image-holder
+											img(src="img/content/sale-4.png", alt="")
+										.description
+											p
+												|Распродажа качественной женской обуви.
+
+
+							
+		include ./partials/footer.jade
+
+		include ./partials/scripts.jade

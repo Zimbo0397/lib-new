@@ -1,0 +1,263 @@
+doctype html
+html(lang='ru')
+	head
+		title articles
+
+		include ./partials/head.jade
+
+	body
+		include ./partials/noscript.jade
+		include ./partials/top-line.jade
+
+
+		include ./partials/breadcrumbs.jade
+
+		.black-plate
+
+		section.content
+			.container
+				.content-body.inline-layout
+					.aside-open#aside-open
+					.aside-panel#aside-panel
+						.close-btn#aside-slose
+						.panel-1.popul
+							h3 Популярные Статьи
+							ul
+								li
+									a(href="#")
+										.image-holder
+											img(src="img/content/pop-1.png", alt="")
+										span 9 декабря 2016
+										p Какой формат книг вам подходит?
+								li
+									a(href="#")
+										.image-holder
+											img(src="img/content/pop-2.png", alt="")
+										span 1 декабля 2016
+										p 5 самых лучших книг, которые стоит прочитать зимними вечерами
+								li
+									a(href="#")
+										.image-holder
+											img(src="img/content/pop-3.png", alt="")
+										span 26 ноября 2016
+										p Топ-20 книг, о прочтении которых лгут чаще всего
+						.panel-1.announc
+							h3 Анонс
+							ul
+								li
+									a(href="#")
+										.image-holder
+											img(src="img/content/anounc-1.png", alt="")
+										p Что сделала бы Грейс?
+										span Джина Маккинон
+								li
+									a(href="#")
+										.image-holder
+											img(src="img/content/anounc-2.png", alt="")
+										p Леди из "Миссолонги"
+										span Колин Маккалоу
+								li
+									a(href="#")
+										.image-holder
+											img(src="img/content/anounc-3.png", alt="")
+										p Отбор
+										span Кира Касс
+						.panel-1
+							h3 Популярные Авторы
+							ul
+								li
+									a(href="#")
+										.image-holder
+											img(src="img/content/auhtor-1.png", alt="")
+										p Стивен Кинг
+										span 176 книг
+								li
+									a(href="#")
+										.image-holder
+											img(src="img/content/auhtor-2.png", alt="")
+										p Джорджо Мойес
+										span 176 книг
+								li
+									a(href="#")
+										.image-holder
+											img(src="img/content/auhtor-3.png", alt="")
+										p Макс Фрай
+										span 176 книг
+
+					.content-holder
+						
+						.comments
+							h4 Статьи
+							.comments-body.articles
+								.comment-item
+									.comment-header
+										h5 Статья о серии книг - "О дремучем Лесе"
+										.star-rating
+											.star-rating__wrap
+												input#star-rating-5.star-rating__input(type='radio', name='rating', value='5')
+												label.star-rating__ico.fa.fa-star-o.fa-lg(for='star-rating-5', title='5 out of 5 stars')
+												input#star-rating-4.star-rating__input(type='radio', name='rating', value='4')
+												label.star-rating__ico.fa.fa-star-o.fa-lg(for='star-rating-4', title='4 out of 5 stars')
+												input#star-rating-3.star-rating__input(type='radio', name='rating', value='3')
+												label.star-rating__ico.fa.fa-star-o.fa-lg(for='star-rating-3', title='3 out of 5 stars')
+												input#star-rating-2.star-rating__input(type='radio', name='rating', value='2')
+												label.star-rating__ico.fa.fa-star-o.fa-lg(for='star-rating-2', title='2 out of 5 stars')
+												input#star-rating-1.star-rating__input(type='radio', name='rating', value='1')
+												label.star-rating__ico.fa.fa-star-o.fa-lg(for='star-rating-1', title='1 out of 5 stars')
+											.rate-count
+												span 126 голосов
+										.date-soc
+											p 15 декабря 2016
+											.socials-holder
+												ul
+													mixin socItem(src)
+														li
+															a(href="#")
+																img(src= src, alt= src)
+													+socItem('img/icons/vk-green.png')
+													+socItem('img/icons/twitter-green.png')
+													+socItem('img/icons/odnoklasniki-green.png')
+													+socItem('img/icons/instagram-green.png')
+													+socItem('img/icons/google+-green.png')
+													+socItem('img/icons/facebook-green.png')
+									.comment-text
+										.image-holder
+											img(src="img/content/pop-1.png", alt="")
+										p
+											|Очень часто, когда девушки плачут, они вовсе не хотят, чтобы ты решил проблему, а только, чтобы утешил. Очень часто, когда девушки плачут, они вовсе не хотят, чтобы ты решил проблему, а только, чтобы утешил. Очень часто, когда девушки плачут, они вовсе не хотят, чтобы ты решил проблему, а только, чтобы утешил. Очень часто, когда девушки плачут, они вовсе не хотят, чтобы ты решил проблему, а только, чтобы утешил.
+											a(href="#").more-btn Читать больше
+								.comment-item
+									.comment-header
+										h5 Статья о серии книг - "О дремучем Лесе"
+										.star-rating
+											.star-rating__wrap
+												input#star-rating-5.star-rating__input(type='radio', name='rating', value='5')
+												label.star-rating__ico.fa.fa-star-o.fa-lg(for='star-rating-5', title='5 out of 5 stars')
+												input#star-rating-4.star-rating__input(type='radio', name='rating', value='4')
+												label.star-rating__ico.fa.fa-star-o.fa-lg(for='star-rating-4', title='4 out of 5 stars')
+												input#star-rating-3.star-rating__input(type='radio', name='rating', value='3')
+												label.star-rating__ico.fa.fa-star-o.fa-lg(for='star-rating-3', title='3 out of 5 stars')
+												input#star-rating-2.star-rating__input(type='radio', name='rating', value='2')
+												label.star-rating__ico.fa.fa-star-o.fa-lg(for='star-rating-2', title='2 out of 5 stars')
+												input#star-rating-1.star-rating__input(type='radio', name='rating', value='1')
+												label.star-rating__ico.fa.fa-star-o.fa-lg(for='star-rating-1', title='1 out of 5 stars')
+											.rate-count
+												span 126 голосов
+										.date-soc
+											p 15 декабря 2016
+											.socials-holder
+												ul
+													mixin socItem(src)
+														li
+															a(href="#")
+																img(src= src, alt= src)
+													+socItem('img/icons/vk-green.png')
+													+socItem('img/icons/twitter-green.png')
+													+socItem('img/icons/odnoklasniki-green.png')
+													+socItem('img/icons/instagram-green.png')
+													+socItem('img/icons/google+-green.png')
+													+socItem('img/icons/facebook-green.png')
+									.comment-text
+										.image-holder
+											img(src="img/content/pop-1.png", alt="")
+										p
+											|Очень часто, когда девушки плачут, они вовсе не хотят, чтобы ты решил проблему, а только, чтобы утешил. Очень часто, когда девушки плачут, они вовсе не хотят, чтобы ты решил проблему, а только, чтобы утешил. Очень часто, когда девушки плачут, они вовсе не хотят, чтобы ты решил проблему, а только, чтобы утешил. Очень часто, когда девушки плачут, они вовсе не хотят, чтобы ты решил проблему, а только, чтобы утешил.
+											a(href="#").more-btn Читать больше
+								.comment-item
+									.comment-header
+										h5 Статья о серии книг - "О дремучем Лесе"
+										.star-rating
+											.star-rating__wrap
+												input#star-rating-5.star-rating__input(type='radio', name='rating', value='5')
+												label.star-rating__ico.fa.fa-star-o.fa-lg(for='star-rating-5', title='5 out of 5 stars')
+												input#star-rating-4.star-rating__input(type='radio', name='rating', value='4')
+												label.star-rating__ico.fa.fa-star-o.fa-lg(for='star-rating-4', title='4 out of 5 stars')
+												input#star-rating-3.star-rating__input(type='radio', name='rating', value='3')
+												label.star-rating__ico.fa.fa-star-o.fa-lg(for='star-rating-3', title='3 out of 5 stars')
+												input#star-rating-2.star-rating__input(type='radio', name='rating', value='2')
+												label.star-rating__ico.fa.fa-star-o.fa-lg(for='star-rating-2', title='2 out of 5 stars')
+												input#star-rating-1.star-rating__input(type='radio', name='rating', value='1')
+												label.star-rating__ico.fa.fa-star-o.fa-lg(for='star-rating-1', title='1 out of 5 stars')
+											.rate-count
+												span 126 голосов
+										.date-soc
+											p 15 декабря 2016
+											.socials-holder
+												ul
+													mixin socItem(src)
+														li
+															a(href="#")
+																img(src= src, alt= src)
+													+socItem('img/icons/vk-green.png')
+													+socItem('img/icons/twitter-green.png')
+													+socItem('img/icons/odnoklasniki-green.png')
+													+socItem('img/icons/instagram-green.png')
+													+socItem('img/icons/google+-green.png')
+													+socItem('img/icons/facebook-green.png')
+									.comment-text
+										.image-holder
+											img(src="img/content/pop-1.png", alt="")
+										p
+											|Очень часто, когда девушки плачут, они вовсе не хотят, чтобы ты решил проблему, а только, чтобы утешил. Очень часто, когда девушки плачут, они вовсе не хотят, чтобы ты решил проблему, а только, чтобы утешил. Очень часто, когда девушки плачут, они вовсе не хотят, чтобы ты решил проблему, а только, чтобы утешил. Очень часто, когда девушки плачут, они вовсе не хотят, чтобы ты решил проблему, а только, чтобы утешил.
+											a(href="#").more-btn Читать больше
+
+											
+								.pagination-holder
+									ul.pagination
+										li
+											a(href="#").prev
+										li
+											a(href="#") 1
+										li
+											a(href="#") 2
+										li
+											a(href="#") 3
+										li
+											a(href="#") 4
+										li
+											a(href="#") ...
+										li
+											a(href="#") 1728
+										li
+											a(href="#").next
+
+						.sale
+							.inline-layout.col-4
+								.sale-col
+									a(href="#")
+										.sale-item
+											.image-holder
+												img(src="img/content/sale-1.png", alt="")
+											.description
+												p
+													|Распродажа качественной женской обуви.
+								.sale-col
+									a(href="#")
+										.sale-item
+											.image-holder
+												img(src="img/content/sale-2.png", alt="")
+											.description
+												p
+													|Распродажа качественной женской обуви.
+								.sale-col
+									a(href="#")
+										.sale-item
+											.image-holder
+												img(src="img/content/sale-3.png", alt="")
+											.description
+												p
+													|Распродажа качественной женской обуви.
+								.sale-col
+									a(href="#")
+										.sale-item
+											.image-holder
+												img(src="img/content/sale-4.png", alt="")
+											.description
+												p
+													|Распродажа качественной женской обуви.
+
+
+							
+		include ./partials/footer.jade
+
+		include ./partials/scripts.jade

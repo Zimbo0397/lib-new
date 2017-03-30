@@ -1,0 +1,1746 @@
+@import _mixins
+
+.chromeperfectpixel-initial-block iframe,
+#chromeperfectpixel-supported-by
+	display: none !important
+#__bs_notify__
+	display: none !important
+	opacity: 0 !important
+
+body
+	font: $font-stack
+	// &::-webkit-scrollbar
+	// 	height: 0
+	// 	width: 0
+
+
+
+//----------------------------------
+// TOP-line
+//----------------------------------
+
+.top-line
+	padding-bottom: 16px
+	padding-top: 10px
+	.inline-layout
+		&.col-2 > *
+			@media #{$media-sm-max}
+				width: 100%
+
+.brand-holder
+	display: inline-block
+	vertical-align: top
+	position: relative
+	> a
+		font-size: 2.7em
+		display: inline-block
+		vertical-align: middle
+		@media #{$media-lp-max}
+			font-size: 2.2em
+
+.admin-panel
+	text-align: right
+	padding-top: 16px
+	// @media #{$media-lg-max}
+	// 	padding-top: 0
+	li
+		display: inline-block
+		margin-left: 45px
+		@media #{$media-lg-max}
+			margin-left: 20px
+		@media #{$media-lp-max}
+			margin-left: 20px
+		a
+			padding-left: 25px
+			display: inline-block
+			position: relative
+			line-height: 25px
+			font-size: 1.05em
+			@media #{$media-lp-max}
+				padding-left: 0
+			.image-holder
+				width: 20px
+				position: absolute
+				top: -2px
+				left: 0
+				@media #{$media-lg-max}
+					position: relative
+					top: 0
+			span
+				@media #{$media-lg-max}
+					display: none
+.nav-holder
+	background-image: -webkit-linear-gradient(#daba6c, #b8860b)
+	background-image: -o-linear-gradient(#daba6c, #b8860b)
+	background-image: linear-gradient(#daba6c, #b8860b)
+	padding-top: 24px
+	padding-bottom: 27px
+	position: relative
+	.nav
+		padding-right: 350px
+		@media #{$media-lg-max}
+			padding-right: 280px
+		@media #{$media-md-max}
+			display: none
+		&.mobile
+			display: block
+			padding-right: 0px
+			max-height: 0
+			overflow: hidden
+			transition: max-height .2s
+			ul
+				margin-top: 20px
+			&.open
+				max-height: 1000px
+				overflow: initial
+				transition: max-height .2s
+			li
+				display: block
+				margin-bottom: 10px
+			@media #{$media-md-min}
+				display: none
+	li
+		display: inline-block
+		margin-right: 40px
+		a
+			display: inline-block
+			text-transform: uppercase
+			color: #fff
+.search-holder
+	position: absolute
+	top: -5px
+	right: 0
+	background: #fff
+	width: 335px
+	padding-right: 20px
+	padding-left: 20px
+	@media #{$media-md-max}
+		display: none
+	&.mobile
+		position: relative
+		left: 0
+		right: auto
+		width: 180px
+		display: block
+		margin-top: 20px
+	@media #{$media-lg-max}
+		width: 280px
+	input
+		width: 100%
+		background: transparent
+		height: 33px
+		outline: none
+	a
+		position: absolute
+		width: 18px
+		height: 18px
+		top: 7px
+		right: 17px
+		display: inline-block
+		img
+			width: 100%
+
+// breadcrumbs
+.breadcrumbs-nav
+	padding: 16px 0
+.breadcrumbs
+	li
+		display: inline-block
+		margin-right: 10px
+		a
+			color: #5da0a0
+		&:last-child
+			a
+				color: #000
+
+
+
+// content
+.content
+	padding-top: 15px
+	&.black
+		background: #000
+		.reader
+			p
+				color: #fff
+	&.yell
+		background: #fce792
+	.content-body
+		position: relative
+	.text-body
+		padding: 50px
+		background: #f6f7f7
+		@media #{$media-sm-max}
+			padding: 20px
+		h3
+			padding-bottom: 10px
+			border-bottom: 2px solid #d4cfcf
+			margin-bottom: 30px
+.aside-panel
+	max-width: 400px
+	padding-right: 100px
+	background: #fff
+	@media #{$media-lg-max}
+		position: absolute
+		z-index: 2
+		border: 1px solid #babfbf
+		padding: 12px
+		left: -500px
+		-webkit-box-shadow: 0px 0px 10px -1px rgba(148,148,148,1)
+		-moz-box-shadow: 0px 0px 10px -1px rgba(148,148,148,1)
+		box-shadow: 0px 0px 10px -1px rgba(148,148,148,1)
+		transition: left .2s
+		&.open
+			left: 0
+			transition: left .2s
+	.close-btn
+		position: absolute
+		top: 12px
+		right: 12px
+		height: 20px
+		width: 20px
+		cursor: pointer
+		@media #{$media-md-min}
+			display: none
+		&:after,
+		&:before
+			content: ''
+			position: absolute
+			height: 2px
+			width: 100%
+			top: 50%
+			left: 0
+			margin-top: -1px
+			background: #fe959c
+		&:after
+			-webkit-transform: rotate(-45deg)
+			-moz-transform: rotate(-45deg)
+			-ms-transform: rotate(-45deg)
+			-o-transform: rotate(-45deg)
+			transform: rotate(-45deg)
+		&:before
+			-webkit-transform: rotate(45deg)
+			-moz-transform: rotate(45deg)
+			-ms-transform: rotate(45deg)
+			-o-transform: rotate(45deg)
+			transform: rotate(45deg)
+
+	h2
+		text-transform: uppercase
+		font-size: 1.2em
+		@media #{$media-lp-max}
+			font-size: 1em
+	.genre
+		margin-bottom: 57px
+	.genre-list
+		padding-top: 22px
+		li
+			margin-bottom: 17px
+			max-height: 19px
+			overflow: hidden
+			&.active
+				max-height: 1000px
+				> a
+					color: #b8860b
+					padding-right: 20px
+					position: relative
+					&:after
+						content: ""
+						position: absolute
+						top: 10px
+						right: 0
+						height: 2px
+						width: 13px
+						background: #b8860b
+			a
+				display: inline-block
+				color: #6f6565
+			ul
+				padding-left: 15px
+				padding-top: 11px
+				li
+					padding-left: 10px
+	.panel-1
+		margin-bottom: 57px
+		h3
+			text-transform: uppercase
+			margin-bottom: 29px
+			font-weight: 600
+		li
+			padding-left: 89px
+			position: relative
+			padding-top: 12px
+			margin-bottom: 24px
+			.image-holder
+				height: 60px
+				width: 60px
+				position: absolute
+				top: 0
+				left: 4px
+				// border-radius: 50%
+				&:after
+					content: ''
+					position: absolute
+					bottom: 0
+					left: 0
+					width: 100%
+					height: 2px
+					background: #b8860b
+			p
+				font-size: 1.2em
+				margin-bottom: 4px
+			span
+				font-size: 1.1em
+				color: #b7b6b6
+				&.books-count
+					display: inline-block
+					background: #b8860b
+					color: #fff
+					font-weight: 600
+					padding: 0 5px
+					vertical-align: middle
+					margin-right: 8px
+					border-radius: 10px
+		&.announc
+			li
+				height: 133px
+				padding-left: 118px
+				padding-top: 38px
+				margin-bottom: 20px
+			.image-holder
+				width: 90px
+				height: 130px
+				border-radius: 0
+				top: 1px
+				left: 0px
+				border: 4px solid #dbaa39
+				box-shadow: 3px 3px 5px 0px rgba(110,110,110,1)
+		&.popul
+			h3
+				font-size: 1.2em
+			li
+				height: 112px
+				padding-left: 157px
+				margin-bottom: 15px
+				padding-top: 25px
+				&:hover
+					p
+						color: #b8860b
+			.image-holder
+				width: 140px
+				border-radius: 0
+				height: 110px
+				left: 1px
+				top: 1px
+			p
+				text-decoration: underline
+				max-height: 57px
+				overflow: hidden
+
+
+
+
+.content-holder
+	max-width: 770px
+	width: 100%
+	@media #{$media-lg-max}
+		max-width: 100%
+	.gen-line
+		position: relative
+		padding-left: 80px
+		text-align: right
+		border-bottom: 2px solid #f6f6f6
+		padding-bottom: 12px
+		min-height: 35px
+		h4
+			font-size: 1.22em
+			text-transform: uppercase
+			position: absolute
+			top: 0
+			left: 0
+	.top-sort
+		@media #{$media-sm-max}
+			display: none
+
+		li
+			display: inline-block
+			margin-left: 25px
+			a
+				display: inline-block
+				font-size: 1.2em
+		
+.filters-holder
+	padding-top: 29px
+	position: relative
+	h5
+		text-transform: uppercase
+		font-size: 1.01em		
+
+	.sort-holder
+		position: absolute
+		display: inline-block
+		top: 28px
+		right: 11px
+		padding-bottom: 10px
+		overflow: hidden
+		@media #{$media-lg-max}
+			position: relative
+			top: 0
+			right: 0
+			margin-top: 20px
+		&.open
+			overflow: initial
+			.sort-menu
+				opacity: 1
+		p
+			font-size: 1.05em
+		li
+			display: block
+		.sort-menu
+			position: absolute
+			top: 26px
+			left: 5px
+			min-width: 221px
+			border-radius: 2px
+			-webkit-box-shadow: 0px 0px 10px -1px rgba(148,148,148,1)
+			-moz-box-shadow: 0px 0px 10px -1px rgba(148,148,148,1)
+			box-shadow: 0px 0px 10px -1px rgba(148,148,148,1)
+			opacity: 0
+			background: #fff
+			a
+				font-size: 1.05em
+				line-height: 2.2em
+				display: block
+				padding: 0px 18px
+				&:hover
+					background: #f6f7f7
+	.abc-list
+		padding-top: 22px
+		max-width: 100%
+		overflow: auto
+		&::-webkit-scrollbar
+			width: 5px
+
+		&::-webkit-scrollbar-track
+			-webkit-box-shadow: inset 0 0 6px #fe959c
+			-webkit-border-radius: 10px
+			border-radius: 10px
+
+		&::-webkit-scrollbar-thumb 
+			-webkit-border-radius: 10px
+			border-radius: 10px
+			background: #fe959c
+			-webkit-box-shadow: inset 0 0 6px #fe959c
+
+		&::-webkit-scrollbar-thumb:window-inactive 
+			background: #fe959c
+		ul
+			margin-bottom: 9px
+			white-space: nowrap
+		li
+			display: inline-block
+			margin-right: 9px
+			a
+				font-size: 1.29em
+				&:hover
+					color: #b8860b
+
+
+
+.library-list
+	margin: -16px
+	padding-top: 51px
+	.inline-layout
+		&.col-2 > *
+			@media #{$media-sm-max}
+				width: 100%
+
+
+.lib-col
+	padding: 16px
+.lib-item
+	background: #f6f7f7
+	width: 100%
+	position: relative
+	padding: 21px
+	margin-bottom: 13px
+	padding-bottom: 38px
+	@media #{$media-xs-max}
+		padding: 0
+
+	.head
+		padding-left: 154px
+		height: 190px
+		@media #{$media-xs-max}
+			height: auto
+			padding-left: 0
+		h5
+			font-size: 1.4em
+			max-height: 38px
+			overflow: hidden
+			@media #{$media-xs-max}
+				text-align: center
+				margin-top: 20px
+		.image-holder
+			width: 130px
+			position: absolute
+			top: -15px
+			left: 20px
+			-webkit-box-shadow: 0px 0px 10px -1px rgba(148,148,148,1)
+			-moz-box-shadow: 0px 0px 10px -1px rgba(148,148,148,1)
+			box-shadow: 0px 0px 10px -1px rgba(148,148,148,1)
+			background: url(../img/content/empty-book.png) 50% 50% no-repeat
+			min-height: 214px
+			background-size: cover
+			@media #{$media-xs-max}
+				position: static
+				margin: 0 auto
+				width: 250px
+		.star-rating
+			@media #{$media-xs-max}
+				text-align: center
+	.description
+		font-size: 0.9em
+		line-height: 1.6em
+		height: 80px
+		overflow: hidden
+.book-des
+	margin-top: 6px
+	p
+		font-weight: 600
+		font-size: 0.9em
+		margin-bottom: 1px
+		white-space: nowrap
+		text-overflow: ellipsis
+		width: 100%
+		overflow: hidden
+		span
+			font-weight: 400
+
+.pagination-holder
+	text-align: center
+	margin-top: 45px
+	.pagination
+		display: inline-block
+		vertical-align: middle
+		li
+			display: inline-block
+			padding: 0 10px
+			@media #{$media-xs-max}
+				padding: 0 5px
+			a
+				display: inline-block
+				vertical-align: middle
+				&.prev
+					height: 40px
+					width: 40px
+					background: url(../img/icons/arrow_left-pagin.png)
+				&.next
+					height: 40px
+					width: 40px
+					background: url(../img/icons/arrow_right-pagin.png)
+	.to-page
+		width: 160px
+		display: inline-block
+		vertical-align: middle
+		text-align: left
+		padding-left: 11px
+		input
+			height: 35px
+			width: 60px
+			border: 1px solid #d7d8d8
+			padding: 5px
+			display: inline-block
+			vertical-align: middle
+			outline-color: #b8860b
+		a
+			display: inline-block
+			vertical-align: middle
+			margin-left: 13px
+			font-size: 1.2em
+			text-decoration: underline
+			color: #b8860b
+.sale
+	margin: -15px
+	margin-top: 87px
+	&.book
+		margin-top: 16px
+	.sale-col
+		padding: 15px
+		width: 25%
+		@media #{$media-sm-max}
+			width: 50%
+		@media #{$media-xs-max}
+			width: 100%
+
+	.image-holder
+		height: 169px
+	.description
+		margin-top: 13px
+		height: 57px
+		overflow: hidden
+
+.footer
+	background: #f7f7f7
+	margin-top: 123px
+	padding-top: 26px
+	.footer-description
+		max-width: 720px
+		@media #{$media-lg-max}
+			max-width: 100%
+		@media #{$media-xs-max}
+			text-align: center
+	.brand-holder
+		margin-bottom: 10px
+	p
+		line-height: 1.75em
+		font-size: 0.8em
+		color: #8fa9a9
+		@media #{$media-xs-max}
+			display: none
+	.metrics
+		width: 292px
+		margin-top: 8px
+		@media #{$media-lg-max}
+			margin-top: 20px
+		@media #{$media-md-max}
+			display: none
+	.copyright
+		margin-top: 15px
+		text-transform: uppercase
+		font-size: 0.9em
+		margin-top: 14px
+		@media #{$media-lg-max}
+			margin-top: 20px
+			text-align: center
+	.footer-search
+		position: absolute
+		top: 0
+		right: 0
+		padding-top: 62px
+		max-width: 367px
+		width: 100%
+		@media #{$media-lg-max}
+			position: static
+			padding-top: 20px
+		h4
+			font-size: 1.05em
+			text-transform: uppercase
+		.search-holder
+			position: relative
+			margin-top: 15px
+			border: 1px solid #cccccc
+			width: 370px
+			padding-right: 110px
+			@media #{$media-sm-max}
+				padding-right: 94px
+			@media #{$media-md-max}
+				display: block
+			@media #{$media-xs-max}
+				width: 258px
+			a
+				width: 114px
+				height: 35px
+				top: -1px
+				right: -1px
+				line-height: 36px
+				padding-left: 15px
+				font-weight: 600
+				font-size: 1.03em
+				color: #fff
+				background: #b8860b
+				text-transform: uppercase
+				@media #{$media-xs-max}
+					width: 95px
+					font-size: 0.9em
+					padding-left: 0
+	.socials-holder
+		margin-top: 32px
+		ul
+			margin-top: 8px
+			li
+				display: inline-block
+				vertical-align: middle
+				margin-right: 15px
+				line-height: 20px
+				@media #{$media-lp-max}
+					margin-right: 10px
+				a
+					line-height: inherit
+
+.book-ab
+	position: relative
+	padding-top: 30px
+	.image-holder
+		position: absolute
+		left: 47px
+		top: 0
+		width: 200px
+		border: 3px solid #dbaa39
+		box-shadow: 3px 3px 5px 0px #6e6e6e
+		@media #{$media-sm-max}
+			position: relative
+			left: 0
+			margin: 20px auto
+	.book-ab-wrap
+		background: #f6f7f7
+		padding-bottom: 36px
+	.widget-holder
+		.image-holder
+			position: static
+			margin-top: 40px
+			width: 100%
+	.price
+		margin-top: 10px
+		font-size: 1.6em
+		font-weight: bold
+		color: #969090
+		.num
+			color: #fe959c
+	.down-format
+		margin-top: 10px
+		span,
+		ul
+			vertical-align: middle
+			display: inline-block
+			margin-right: 10px
+		li
+			margin-left: 5px
+			a
+				font-weight: 600
+				&:hover
+					color: #b8860b
+	.read-frag
+		display: inline-block
+		border: 1px solid #fe959c
+		padding: 6px 12px
+		margin-top: 10px
+		i
+			display: inline-block
+			vertical-align: middle
+			margin-right: 10px
+			font-size: 1.3em
+			color: #fe959c
+			position: relative
+			bottom: -2px
+		span
+			display: inline-block
+			vertical-align: middle
+			text-transform: uppercase
+			color: #565656
+	.top-book
+		padding-left: 286px
+		padding-top: 31px
+		@media #{$media-sm-max}
+			padding: 5px
+		.posabs-holder
+			position: absolute
+			top: 11px
+			left: 0
+			font-size: 0.9em
+			.posab
+				background: #fe959c
+				padding: 2px 15px
+				margin-bottom: 10px
+				color: #fff
+				-webkit-box-shadow: -1px 0px 5px 0px rgba(254,149,156,1)
+				-moz-box-shadow: -1px 0px 5px 0px rgba(254,149,156,1)
+				box-shadow: -1px 0px 5px 0px rgba(254,149,156,1)
+				i
+					margin-right: 5px
+				&.hit
+					background: #b8860b
+					-webkit-box-shadow: -1px 0px 5px 0px rgba(61,185,140,1)
+					-moz-box-shadow: -1px 0px 5px 0px rgba(61,185,140,1)
+					box-shadow: -1px 0px 5px 0px rgba(61,185,140,1)
+	h3
+		font-size: 1.7em
+		line-height: 1.2em
+		@media #{$media-sm-max}
+			text-align: center
+	.star-rating
+		margin-top: 16px
+		display: inline-block
+		.fa
+			font-size: 1.3em
+		.star-rating__ico
+			padding-left: 4px
+	.rate-count
+		display: inline-block
+		margin-left: 7px
+		font-size: 0.98em
+	.book-nav
+		margin-top: 9px
+		li
+			display: inline-block
+			margin-right: 32px
+			@media #{$media-sm-max}
+				margin-right: 5px
+			a
+				text-decoration: underline
+				&:hover
+					color: #b8860b
+	.description
+		margin-top: 16px
+		li
+			margin-bottom: 3px
+	.btns
+		a
+			@media #{$media-xs-max}
+				padding: 5px 5px
+				margin-right: 5px
+		.down-book
+			width: 100%
+			text-align: center
+			max-width: 300px
+			text-transform: uppercase
+			font-size: 1.2em
+
+
+.comments
+	margin-top: 37px
+	padding-left: 46px
+	padding-right: 39px
+	@media #{$media-sm-max}
+		padding: 10px
+	h4
+		font-size: 1.2em
+		text-transform: uppercase
+	.comments-body
+		border-top: 1px solid #e5e5e5
+		margin-top: 18px
+		&.articles
+			.comment-item
+				.comment-header
+					padding-left: 0
+				.comment-text
+					position: relative
+					padding-left: 180px
+					@media #{$media-lp-max}
+						padding-left: 0
+				.image-holder
+					border-radius: 0
+					position: absolute
+					top: 0
+					left: 0
+					width: 150px
+					@media #{$media-lp-max}
+						position: static
+						margin: 0 auto
+						margin-bottom: 20px
+						width: auto
+		&.article
+			.comment-item
+				.image-holder
+					width: auto
+					position: static
+					border-radius: 0
+					margin-bottom: 20px
+				.comment-header
+					position: relative
+					padding-left: 0
+					text-align: right
+					padding-right: 200px
+					@media #{$media-lp-max}
+						padding: 0
+						text-align: center
+					h5
+						text-align: left
+						margin-bottom: 10px
+						@media #{$media-lp-max}
+							text-align: center
+				.date-soc
+					top: 22px
+		.about
+			margin-top: 25px
+			line-height: 1.45em
+		.comment-item
+			position: relative
+			padding-top: 58px
+			margin-bottom: 28px
+			.comment-header
+				padding-left: 94px
+				padding-right: 170px
+				@media #{$media-lp-max}
+					padding: 0
+					text-align: center
+			.image-holder
+				width: 58px
+				top: 47px
+				left: 10px
+				border-radius: 50%
+				position: absolute
+				margin: 0
+				@media #{$media-lp-max}
+					position: static
+					margin: 0 auto
+					margin-bottom: 20px
+			h5
+				font-size: 1.08em
+			.star-rating
+				.star-rating__ico
+					padding-left: 0
+					padding-right: 4px
+				.fa
+					font-size: 1.07em
+		.star-rating
+			margin-top: 7px
+			.star-rating__wrap
+				vertical-align: middle
+			.rate-count
+				font-size: 14px
+				vertical-align: middle
+		.date-soc
+			position: absolute
+			top: 59px
+			right: 4px
+			text-align: right
+			@media #{$media-lp-max}
+				position: static
+				text-align: center
+				margin-top: 10px
+			.socials-holder
+				margin-top: 5px
+				li
+					margin: 0 0 0 9px
+		.comment-text
+			margin-top: 32px
+			line-height: 1.45em
+			a
+				color: #b8860b
+				display: inline-block
+				margin-left: 10px
+				text-decoration: underline
+
+.answer-form
+	margin-top: 46px
+	padding-left: 44px
+	padding-right: 43px
+	max-width: 770px
+	@media #{$media-sm-max}
+		padding: 10px
+	h4
+		font-size: 1.2em
+		text-transform: uppercase
+	.star-rating
+		margin-top: 25px
+		.fa
+			font-size: 1.05em
+	.form-group
+		margin-top: 10px
+		.inline-layout
+			&.col-2 > *
+				@media #{$media-sm-max}
+					width: 100%
+		.input-holder
+			&:last-child
+				text-align: right
+		input
+			width: 100%
+			height: 34px
+			border: 1px solid #edefef
+			max-width: 324px
+			padding: 0 13px
+			outline-color: #ca9713
+			@media #{$media-sm-max}
+				max-width: 100%
+				margin-bottom: 10px
+	textarea
+		width: 100%
+		border: 1px solid #edefef
+		padding: 13px
+		outline-color: #b8860b
+		margin-top: 10px
+		min-height: 115px
+
+.quotations
+	margin-top: 39px
+	.quotation-item
+		padding-bottom: 41px
+		border-bottom: 1px solid #ffffff
+		margin-bottom: 42px
+	p
+		font-style: italic
+	.like
+		margin-top: 24px
+		font-weight: 600
+		padding-right: 170px
+		position: relative
+		@media #{$media-sm-max}
+			padding-right: 0
+		i
+			font-size: 1.3em
+			margin-right: 7px
+			color: #9c9c9c
+		a
+			font-weight: 600
+			&:hover
+				color: #fcaaaf
+				i
+					color: #fcaaaf
+	.socials-holder
+		position: absolute
+		top: 0
+		right: 0px
+		@media #{$media-sm-max}
+			position: static
+			margin-top: 20px
+		li
+			margin: 0 5px
+
+.my-profile-top
+	position: absolute
+	top: 3px
+	right: -118px
+	@media #{$media-sm-max}
+		right: 0
+	a
+		display: inline-block
+	span
+		font-size: 1.05em
+		margin-right: 15px
+		display: inline-block
+		@media #{$media-lp-max}
+			display: none
+	.image-holder
+		display: inline-block
+		height: 49px
+		width: 49px
+		border-radius: 50%
+
+.profile-top
+	padding-right: 292px
+	padding-bottom: 16px
+	border-bottom: 2px solid #f6f6f6
+	min-height: 37px
+	@media #{$media-md-max}
+		padding-right: 0
+	h3
+		font-size: 1.2em
+		text-transform: uppercase
+	.profile-nav
+		position: absolute
+		top: -2px
+		right: 0px
+		@media #{$media-md-max}
+			position: static
+		li
+			display: inline-block
+			margin-left: 27px
+			@media #{$media-md-max}
+				margin-right: 20px
+				margin-left: 0
+				margin-top: 20px
+			@media #{$media-xs-max}
+				margin-right: 15px
+			a
+				font-size: 1.2em
+				position: relative
+				@media #{$media-xs-max}
+					font-size: 1em
+				&.active
+					&:after
+						content: ''
+						position: absolute
+						height: 2px
+						width: 100%
+						background: #b8860b
+						bottom: -16px
+						left: 0px
+.profile-body
+	margin-top: 31px
+	background: #f6f7f7
+	padding: 58px 66px 50px 70px
+	@media #{$media-sm-max}
+		padding: 10px
+	.add-foto
+		padding-left: 150px
+		position: relative
+		min-height: 170px
+		padding-top: 32px
+		@media #{$media-lp-max}
+			padding-left: 0
+		h4
+			font-size: 1.73em
+		.btns
+			margin-top: 28px
+			@media #{$media-lp-max}
+				margin-bottom: 20px
+	.image-holder
+		width: 130px
+		position: absolute
+		top: 0
+		left: 0
+		@media #{$media-lp-max}
+			position: static
+			margin-bottom: 10px
+	.add-info
+		margin-bottom: 18px
+		max-width: 630px
+		&.book
+			label,
+			input,
+			select,
+			textarea
+				max-width: 100%
+		.forms-group
+			width: 50%
+			@media #{$media-sm-max}
+				width: 100%
+			&:nth-child(even)
+				text-align: right
+				@media #{$media-sm-max}
+					text-align: left
+		input,
+		select,
+		textarea
+			display: inline-block
+			height: 40px
+			margin-top: 6px
+			border: 1px solid #d4d3d2
+			max-width: 301px
+			width: 100%
+			padding: 11px
+			outline: none
+			@media #{$media-sm-max}
+				max-width: 100%
+		textarea
+			height: 150px
+			margin-top: 10px
+		label
+			font-size: 1.05em
+			display: inline-block
+			width: 100%
+			max-width: 301px
+			text-align: left
+		h4
+			font-size: 1.2em
+			margin-bottom: 19px
+			text-transform: uppercase
+		.file
+			background: #fff
+			padding: 8px
+		.form-group
+			margin-bottom: 22px
+		.checkboxes
+			margin-top: 34px
+			li
+				width: 33.333%
+				padding-right: 80px
+				position: relative
+				margin-bottom: 10px
+				height: 38px
+				@media #{$media-sm-max}
+					width: 50%
+				@media #{$media-lp-max}
+					width: 100%
+				.checkbox
+					position: absolute
+					top: -4px
+					right: 34px
+
+.my-prof-cart
+	border: 1px solid #f6f7f7
+	position: relative
+	margin-top: 60px
+	max-width: 370px
+	padding: 31px 10px 21px 134px
+	.image-holder
+		position: absolute
+		top: 32px
+		left: 16px
+		width: 98px
+		height: 96px
+	h3
+		text-transform: none
+		font-size: 1.59em
+		margin-bottom: 19px
+	p
+		margin-bottom: 4px
+		width: 100%
+		overflow: hidden
+		text-overflow: ellipsis
+		white-space: nowrap
+
+.books-body
+	margin-top: 40px
+	background: #f6f7f7
+	padding: 20px 40px 30px 20px
+	@media #{$media-sm-max}
+		padding: 10px
+	.books-holder
+		max-width: 710px
+		margin: 0 auto
+		&.groups
+			.book-col
+				padding: 25px
+		&.inline-layout
+			&.col-3 > *
+				@media #{$media-sm-max}
+					width: 50%
+				@media #{$media-lp-max}
+					width: 100%
+		.book-col
+			padding: 15px
+			h4
+				margin-bottom: 30px
+			.counter
+				position: absolute
+				top: -6px
+				right: -6px
+				z-index: 4
+				height: 30px
+				width: 30px
+				background: orange
+				border-radius: 50%
+				text-align: center
+				padding: 5px
+				box-shadow: 0px 0px 10px -1px orange
+			.group-holder
+				position: relative
+				.image2
+					position: absolute
+					top: -10px
+					left: 11px
+					width: 100%
+					height: 100%
+				.image3
+					position: absolute
+					top: 10px
+					left: -9px
+					width: 100%
+					height: 100%
+				.image1
+					z-index: 2
+		.image-holder
+			height: 328px
+			box-shadow: 0px 0px 10px -1px #949494
+			position: relative
+			@media #{$media-lp-max}
+				height: auto
+				max-height: 500px
+			.hover-plate
+				position: absolute
+				top: 0
+				left: 0
+				width: 100%
+				height: 100%
+				background: rgba(0, 0, 0, 0.74)
+				color: #fff
+				padding: 68px 20px 20px 20px
+				text-align: left
+				opacity: 0
+				pointer-events: none
+				transition: opacity .2s
+				.close-btn
+					position: absolute
+					top: 10px
+					right: 10px
+					color: #fff
+					font-size: 2.5em
+					display: inline-block
+					line-height: 1em
+					@media #{$media-sm-max}
+						display: none
+				p
+					font-size: 1.05em
+					color: #fff
+				h5
+					margin-top: 13px
+					font-size: 1.55em
+					font-weight: 400
+					line-height: 1.1em
+				.btns
+					margin-top: 40px
+					text-align: center
+					.button
+						padding: 5px 34px
+				@media #{$media-sm-max}
+					opacity: 1
+					pointer-events: initial
+			&:hover
+				.hover-plate
+					opacity: 1
+					pointer-events: initial
+					transition: opacity .2s
+
+
+.quotations-body
+	margin-top: 40px
+	background: #f6f7f7
+	padding: 11px 50px 30px 47px
+	@media #{$media-sm-max}
+		padding: 20px
+	.quotations-item
+		padding-top: 40px
+		position: relative
+		padding-bottom: 42px
+		border-bottom: 2px solid #ffffff
+		.close-btn
+			position: absolute
+			top: 30px
+			right: -35px
+			font-size: 3em
+			line-height: 0
+			display: inline-block
+			color: #d7d7d7
+			@media #{$media-sm-max}
+				right: 0
+		p
+			font-style: italic
+			font-size: 1.05em
+			line-height: 1.4em
+		.author
+			margin-top: 30px
+			padding-right: 170px
+			position: relative
+			@media #{$media-sm-max}
+				padding-right: 0
+			a
+				font-size: 1.05em
+				text-decoration: underline
+				color: #b8860b
+			.socials-holder
+				position: absolute
+				top: 0
+				right: -21px
+				@media #{$media-sm-max}
+					position: static
+					margin-top: 20px
+.authors-list
+	margin-top: 30px
+	.inline-layout
+		&.col-5 > *
+			@media #{$media-sm-max}
+				width: 33.333%
+			@media #{$media-lp-max}
+				width: 50%
+	li
+		margin-bottom: 20px
+		text-align: center
+	.image-holder
+		width: 120px
+		display: inline-block
+		border-radius: 50%
+		margin-bottom: 10px
+	span
+		color: #b7b6b6
+
+
+
+
+.mobile-nav-btn
+	display: inline-block
+	padding: 0px
+	position: relative
+	top: 5px
+	left: 0px
+	@media #{$media-md-min}
+		display: none
+	span
+		height: 5px
+		width: 40px
+		background: #b9b8b8
+		display: block
+		margin-bottom: 5px
+
+.aside-open
+	height: 40px
+	width: 50px
+	border-radius: 3px
+	text-align: center
+	background: #fe949b
+	margin-top: 20px
+	margin-bottom: 20px
+	cursor: pointer
+	position: relative
+	&:after
+		content: ''
+		position: absolute
+		top: 11px
+		right: 20px
+		border-left: 5px solid transparent
+		border-right: 5px solid #ffffff
+		border-top: 5px solid #ffffff
+		border-bottom: 5px solid transparent
+		-webkit-transform: rotate(135deg)
+		-ms-transform: rotate(135deg)
+		transform: rotate(45deg)
+		height: 10px
+		width: 10px
+	@media #{$media-md-min}
+		display: none
+
+.reader
+	
+	p
+		margin-bottom: 10px
+	.nav-panel
+		width: 300px
+		height: 720px
+		position: relative
+		@media #{$media-lg-max}
+			width: 100%
+			height: auto
+			height: 60px
+		a
+			position: absolute
+			display: inline-block
+			color: #afafaf
+			left: 0
+			font-weight: 600
+			&.back
+				top: 20px
+				padding-top: 10px
+				@media #{$media-lg-max}
+					top: 0
+					
+				img
+					width: 40px
+					position: absolute
+					top: 0
+					left: 0
+			&.font
+				top: 50%
+				transform: translateY(-50%)
+				@media #{$media-lg-max}
+					top: 0
+					left: 50%
+					transform: translateX(-50%)
+				img
+					width: 45px
+			&.head
+				bottom: 0
+				@media #{$media-lg-max}
+					bottom: auto
+					top: 0
+					right: 0
+					left: auto
+	.text-holder
+		min-height: 679px
+		.image-holder
+			float: left
+			margin-right: 30px
+			margin-bottom: 20px
+	.bunner-holder
+		margin-top: 30px
+
+.reader-nav
+	background: #ededed
+	padding: 30px 0
+	margin-top: 50px
+	text-align: center
+	li
+		margin: 0 15px
+		font-weight: 600
+		vertical-align: middle
+		@media #{$media-lp-max}
+			display: block
+			margin-top: 10px
+			&:first-child
+				text-align: left
+			&:last-child
+				text-align: right
+		a
+			font-weight: inherit
+			color: #464646
+		.search
+			width: 80px
+			position: relative
+			height: 30px
+			border: 1px solid #e3e1e1
+			padding-right: 29px
+			background: #fff
+			display: inline-block
+			input
+				width: 100%
+				padding-right: 30px
+				height: 30px
+				outline: none
+				padding: 5px
+				/* padding-left: 10px */
+				background: transparent
+			.search-btn
+				display: inline-block
+				position: absolute
+				top: 0
+				right: 0
+				height: 30px
+				width: 30px
+				background: url(../img/icons/icon_zoom-copy.png) 50% 50% no-repeat
+
+.main-modal
+	position: fixed
+	left: 0
+	top: 0
+	right: 0
+	bottom: 0
+	width: 100%
+	height: 100%
+	opacity: 0
+	pointer-events: none
+	transition: opacity .2s
+	z-index: 56
+	
+	&:before
+		content: ''
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		background: #fff
+		opacity: 0.97
+	&.open
+		opacity: 1
+		pointer-events: inherit
+		transition: opacity .2s
+	.modal-inner
+		max-width: 430px
+		padding: 20px
+		width: 100%
+		position: absolute
+		left: 50%
+		top: 50%
+		transform: translateX(-50%) translateY(-50%) translateZ(0)
+		-webkit-box-shadow: 0px 0px 10px -1px rgba(148,148,148,1)
+		-moz-box-shadow: 0px 0px 10px -1px rgba(148,148,148,1)
+		box-shadow: 0px 0px 10px -1px rgba(148,148,148,1)
+	.close-btn
+		height: 20px
+		width: 20px
+		position: absolute
+		top: 20px
+		right: 20px
+		display: inline-block
+		&:after,
+		&:before
+			content: ''
+			position: absolute
+			height: 2px
+			width: 100%
+			top: 50%
+			left: 0
+			margin-top: -1px
+			background: #525252
+		&:after
+			-webkit-transform: rotate(-45deg)
+			-moz-transform: rotate(-45deg)
+			-ms-transform: rotate(-45deg)
+			-o-transform: rotate(-45deg)
+			transform: rotate(-45deg)
+		&:before
+			-webkit-transform: rotate(45deg)
+			-moz-transform: rotate(45deg)
+			-ms-transform: rotate(45deg)
+			-o-transform: rotate(45deg)
+			transform: rotate(45deg)
+	h4
+		margin-bottom: 20px
+		margin-top: 10px
+		color: #525252
+	ul
+		li
+			margin-right: 10px
+			a
+				text-decoration: underline
+				color: #525252
+				&.active
+					color: #13d790
+					text-decoration: none
+				&:hover
+					color: #13d790
+					text-decoration: none
+		&.chapter
+			li
+				margin-bottom: 10px
+				a
+					text-decoration: underline
+					font-size: 1.3em
+					display: inline-block
+.about-author
+	padding: 20px
+	background: #f6f7f7
+.author-content
+	position: relative
+	min-height: 170px
+	text-align: center
+	@media #{$media-md-max}
+		padding-left: 0
+		text-align: center
+	.image-holder
+		margin-bottom: 20px
+		@media #{$media-md-max}
+			position: static
+			margin: 0 auto
+			margin-bottom: 20px
+	h3
+		font-size: 1.78em
+		line-height: 1em
+		margin-bottom: 10px
+	p
+		font-size: 1.2em
+	.social-holder
+		padding: 20px 0px
+		li
+			a
+				padding: 5px 10px
+				border-radius: 10px
+				margin-right: 10px
+				background: #b8860b
+				color: #fff
+				display: inline-block
+				font-size: 0.8em
+				i
+					color: #fe959c
+					margin-right: 5px
+					color: #fff
+					@media #{$media-sm-max}
+						margin-right: 0
+				.cuonter
+					position: relative
+					margin-left: 10px
+					&:before
+						content: ''
+						top: -5px
+						left: -5px
+						height: 29px
+						width: 1px
+						background: #fff
+						position: absolute
+
+				&.like
+				&.no-like
+					background: #fe959c
+				&.face
+					background: #3b5998
+				&.twitt
+					background: #1da1f2
+				.mb-hide
+					@media #{$media-sm-max}
+						display: none
+
+.author-desc
+	margin-top: 40px
+	h4
+		font-size: 1.5em
+		margin-bottom: 20px
+	.text-holder
+		overflow: hidden
+		transition: max-height .2s
+		max-height: 210px
+		position: relative
+		&:after
+			content: ''
+			position: absolute
+			bottom: 0
+			left: 0
+			height: 20px
+			width: 100%
+			background: -moz-linear-gradient(top,  rgba(240,249,255,0) 0%, rgba(255,255,255,0.47) 47%, rgba(255,255,255,1) 100%)
+			background: -webkit-linear-gradient(top,  rgba(240,249,255,0) 0%,rgba(255,255,255,0.47) 47%,rgba(255,255,255,1) 100%)
+			background: linear-gradient(to bottom,  rgba(240,249,255,0) 0%,rgba(255,255,255,0.47) 47%,rgba(255,255,255,1) 100%)
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f0f9ff', endColorstr='#ffffff',GradientType=0 )
+		&.open
+			max-height: 1000px
+			transition: max-height .2s
+			overflow: initial
+			&:after
+				display: none
+	p
+		font-size: 1.2em
+	.read-more
+		display: inline-block
+		margin-left: 10px
+		color: #fe959c
+		font-weight: 600
+		margin-top: 20px
+.author-books
+	h4
+		font-size: 1.5em
+	hr
+		border-color: #eaeaea
+
+.top-holder
+	padding-top: 20px
+	margin: -10px
+	padding-bottom: 30px
+	.inline-layout
+		& > *
+			@media #{$media-md-max}
+				width: 50%
+			@media #{$media-lp-max}
+				width: 100%
+	.top-item
+		padding: 10px
+		&.gold
+			position: relative
+			.image-holder
+				border: 4px solid #dbaa39
+		// 	&:before
+		// 		content: ''
+		// 		position: absolute
+		// 		top: 4px
+		// 		left: 4px
+		// 		width: 80px
+		// 		height: 80px
+		// 		background: url(../img/icons/gold-ribbon-new.png) 50% 50%
+		// 		z-index: 2
+		// 		background-size: cover
+		// &.best
+		// 	&:before
+		// 		background: url(../img/icons/gold-ribbon-best.png) 50% 50%
+		// 		background-size: cover
+		// &.top
+		// 	&:before
+		// 		background: url(../img/icons/gold-ribbon-top.png) 50% 50%
+		// 		background-size: cover
+
+		.image-holder
+			height: 230px
+			box-shadow: 3px 3px 5px 0px rgba(110,110,110,1)
+			.posabs-holder
+				position: absolute
+				top: 11px
+				left: 0
+				font-size: 0.9em
+				.posab
+					background: #d9a736
+					padding: 2px 15px
+					margin-bottom: 10px
+					color: #fff
+					-webkit-box-shadow: -1px 0px 5px 0px rgba(254,149,156,1)
+					-moz-box-shadow: -1px 0px 5px 0px rgba(254,149,156,1)
+					box-shadow: -1px 0px 5px 0px rgba(254,149,156,1)
+					box-shadow: 3px 3px 5px 0px rgba(110,110,110,1)
+					i
+						margin-right: 5px
+					&.hit
+						background: #b8860b
+						-webkit-box-shadow: -1px 0px 5px 0px rgba(61,185,140,1)
+						-moz-box-shadow: -1px 0px 5px 0px rgba(61,185,140,1)
+						box-shadow: -1px 0px 5px 0px rgba(61,185,140,1)
+					&.green
+						background: #38d613
+					&.pink
+						background: #f121c2
+
+		.text-holder
+			margin-top: 20px
+			font-size: 1.1em
+			font-weight: 600
+			height: 80px
+			overflow: hidden
+	&.books-h
+		text-align: center
+		.top-item
+			width: 197px
+		h4,
+		p
+			// white-space: nowrap
+			overflow: hidden
+			max-height: 40px
+			text-align: left
+			// text-overflow: ellipsis
+		p
+			font-weight: 100

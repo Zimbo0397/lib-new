@@ -1,0 +1,361 @@
+doctype html
+html(lang='ru')
+	head
+		title about_book_feedback
+
+		include ./partials/head.jade
+
+	body
+		include ./partials/noscript.jade
+		include ./partials/top-line.jade
+
+		include ./partials/breadcrumbs.jade
+
+		.black-plate
+
+		section.content
+			.container
+				.content-body.inline-layout
+					.aside-open#aside-open
+					.aside-panel#aside-panel
+						.close-btn#aside-slose
+						.panel-1.popul
+							h3 Популярные Статьи
+							ul
+								li
+									a(href="#")
+										.image-holder
+											img(src="img/content/pop-1.png", alt="")
+										span 9 декабря 2016
+										p Какой формат книг вам подходит?
+								li
+									a(href="#")
+										.image-holder
+											img(src="img/content/pop-2.png", alt="")
+										span 1 декабля 2016
+										p 5 самых лучших книг, которые стоит прочитать зимними вечерами
+								li
+									a(href="#")
+										.image-holder
+											img(src="img/content/pop-3.png", alt="")
+										span 26 ноября 2016
+										p Топ-20 книг, о прочтении которых лгут чаще всего
+						.panel-1.announc
+							h3 Анонс
+							ul
+								li
+									a(href="#")
+										.image-holder
+											img(src="img/content/anounc-1.png", alt="")
+										p Что сделала бы Грейс?
+										span Джина Маккинон
+								li
+									a(href="#")
+										.image-holder
+											img(src="img/content/anounc-2.png", alt="")
+										p Леди из "Миссолонги"
+										span Колин Маккалоу
+								li
+									a(href="#")
+										.image-holder
+											img(src="img/content/anounc-3.png", alt="")
+										p Отбор
+										span Кира Касс
+						.panel-1
+							h3 Популярные Авторы
+							ul
+								li
+									a(href="#")
+										.image-holder
+											img(src="http://ic.pics.livejournal.com/harmoniq_app/67697618/191568/191568_original.jpg", alt="")
+										p Стивен Кинг
+										span.books-count 176
+										span книг
+								li
+									a(href="#")
+										.image-holder
+											img(src="http://ic.pics.livejournal.com/harmoniq_app/67697618/191238/191238_original.jpg", alt="")
+										p Джорджо Мойес
+										span.books-count 176
+										span книг
+								li
+									a(href="#")
+										.image-holder
+											img(src="http://ic.pics.livejournal.com/harmoniq_app/67697618/191988/191988_original.jpg", alt="")
+										p Макс Фрай
+										span.books-count 176
+										span книг
+								li
+									a(href="#")
+										.image-holder
+											img(src="http://ic.pics.livejournal.com/harmoniq_app/67697618/196721/196721_original.jpg", alt="")
+										p Ли Чайлд
+										span.books-count 176
+										span книг
+								li
+									a(href="#")
+										.image-holder
+											img(src="http://ic.pics.livejournal.com/harmoniq_app/67697618/191238/191238_original.jpg", alt="")
+										p Анджей Сапковский
+										span.books-count 176
+										span книг
+								li
+									a(href="#")
+										.image-holder
+											img(src="http://ic.pics.livejournal.com/harmoniq_app/67697618/198924/198924_original.jpg", alt="")
+										p Харуки Мураками
+										span.books-count 176
+										span книг
+
+					.content-holder
+						.book-ab
+							.book-ab-wrap
+								.top-book
+									.image-holder
+										img(src="img/content/p-book.png", alt="")
+									h3 Отбор
+									.book-rating-holder
+										.star-rating
+											.star-rating__wrap
+												input#star-rating-5.star-rating__input(type='radio', name='rating', value='5')
+												label.star-rating__ico.fa.fa-star-o.fa-lg(for='star-rating-5', title='5 out of 5 stars')
+												input#star-rating-4.star-rating__input(type='radio', name='rating', value='4')
+												label.star-rating__ico.fa.fa-star-o.fa-lg(for='star-rating-4', title='4 out of 5 stars')
+												input#star-rating-3.star-rating__input(type='radio', name='rating', value='3')
+												label.star-rating__ico.fa.fa-star-o.fa-lg(for='star-rating-3', title='3 out of 5 stars')
+												input#star-rating-2.star-rating__input(type='radio', name='rating', value='2')
+												label.star-rating__ico.fa.fa-star-o.fa-lg(for='star-rating-2', title='2 out of 5 stars')
+												input#star-rating-1.star-rating__input(type='radio', name='rating', value='1')
+												label.star-rating__ico.fa.fa-star-o.fa-lg(for='star-rating-1', title='1 out of 5 stars')
+										.rate-count
+											span 883 количество голосов
+									.book-nav
+										ul
+											li
+												a(href="#") О книге
+											li
+												a(href="#") Отзывы
+											li
+												a(href="#") Цитаты
+									.description
+										ul.book-des
+											li
+												p Автор: 
+													span Кира Касс
+											li
+												p Жанр: 
+													span Сказки
+											li
+												p Дата добавления: 
+													span 15/11/2014
+											li
+												p Языки книги: 
+													span Русский
+											li
+												p Кол-во страниц: 
+													span 430
+									.btns
+										a(href="#").button Читать
+										a(href="#").button.transp Слушать
+										a(href="#") В избранное
+
+								.comments
+									h4 Отзывы
+									.comments-body
+										.comment-item
+											.comment-header
+												.image-holder
+													img(src="img/content/comment-1.png", alt="")
+												h5 Анна Дорофеева
+												.star-rating
+													.star-rating__wrap
+														input#star-rating-5.star-rating__input(type='radio', name='rating', value='5')
+														label.star-rating__ico.fa.fa-star-o.fa-lg(for='star-rating-5', title='5 out of 5 stars')
+														input#star-rating-4.star-rating__input(type='radio', name='rating', value='4')
+														label.star-rating__ico.fa.fa-star-o.fa-lg(for='star-rating-4', title='4 out of 5 stars')
+														input#star-rating-3.star-rating__input(type='radio', name='rating', value='3')
+														label.star-rating__ico.fa.fa-star-o.fa-lg(for='star-rating-3', title='3 out of 5 stars')
+														input#star-rating-2.star-rating__input(type='radio', name='rating', value='2')
+														label.star-rating__ico.fa.fa-star-o.fa-lg(for='star-rating-2', title='2 out of 5 stars')
+														input#star-rating-1.star-rating__input(type='radio', name='rating', value='1')
+														label.star-rating__ico.fa.fa-star-o.fa-lg(for='star-rating-1', title='1 out of 5 stars')
+													.rate-count
+														span 126 голосов
+												.date-soc
+													p 15 декабря 2016
+													.socials-holder
+														ul
+															mixin socItem(src)
+																li
+																	a(href="#")
+																		img(src= src, alt= src)
+															+socItem('img/icons/vk-green.png')
+															+socItem('img/icons/twitter-green.png')
+															+socItem('img/icons/odnoklasniki-green.png')
+															+socItem('img/icons/instagram-green.png')
+															+socItem('img/icons/google+-green.png')
+															+socItem('img/icons/facebook-green.png')
+											.comment-text
+												p
+													|Очень часто, когда девушки плачут, они вовсе не хотят, чтобы ты решил проблему, а только, чтобы утешил.
+										.comment-item
+											.comment-header
+												.image-holder
+													img(src="img/content/comment-2.png", alt="")
+												h5 Виталий Збризский
+												.star-rating
+													.star-rating__wrap
+														input#star-rating-5.star-rating__input(type='radio', name='rating', value='5')
+														label.star-rating__ico.fa.fa-star-o.fa-lg(for='star-rating-5', title='5 out of 5 stars')
+														input#star-rating-4.star-rating__input(type='radio', name='rating', value='4')
+														label.star-rating__ico.fa.fa-star-o.fa-lg(for='star-rating-4', title='4 out of 5 stars')
+														input#star-rating-3.star-rating__input(type='radio', name='rating', value='3')
+														label.star-rating__ico.fa.fa-star-o.fa-lg(for='star-rating-3', title='3 out of 5 stars')
+														input#star-rating-2.star-rating__input(type='radio', name='rating', value='2')
+														label.star-rating__ico.fa.fa-star-o.fa-lg(for='star-rating-2', title='2 out of 5 stars')
+														input#star-rating-1.star-rating__input(type='radio', name='rating', value='1')
+														label.star-rating__ico.fa.fa-star-o.fa-lg(for='star-rating-1', title='1 out of 5 stars')
+													.rate-count
+														span 126 голосов
+												.date-soc
+													p 15 декабря 2016
+													.socials-holder
+														ul
+															mixin socItem(src)
+																li
+																	a(href="#")
+																		img(src= src, alt= src)
+															+socItem('img/icons/vk-green.png')
+															+socItem('img/icons/twitter-green.png')
+															+socItem('img/icons/odnoklasniki-green.png')
+															+socItem('img/icons/instagram-green.png')
+															+socItem('img/icons/google+-green.png')
+															+socItem('img/icons/facebook-green.png')
+											.comment-text
+												p
+													|Я тоже девочка и не хочу ничего решать, а просто хочу прочитать хорошую книжку.А главная героиня этого шедевра хочет мальчика. Или стоп. Она уже не хочет этого мальчика. И другого не хочет. Хотя... Пожалуй другого она все-таки хочет. Но если задуматься, то и первый был ничего так. И правильно, зачем решать сейчас, если можно смастерить трилогию? А значит впереди ещё две книги в которых чудо-девочка будет ломать голову, кто же ей по душе.
+													a(href="#") Читать больше
+										.comment-item
+											.comment-header
+												.image-holder
+													img(src="img/content/comment-1.png", alt="")
+												h5 Анна Дорофеева
+												.star-rating
+													.star-rating__wrap
+														input#star-rating-5.star-rating__input(type='radio', name='rating', value='5')
+														label.star-rating__ico.fa.fa-star-o.fa-lg(for='star-rating-5', title='5 out of 5 stars')
+														input#star-rating-4.star-rating__input(type='radio', name='rating', value='4')
+														label.star-rating__ico.fa.fa-star-o.fa-lg(for='star-rating-4', title='4 out of 5 stars')
+														input#star-rating-3.star-rating__input(type='radio', name='rating', value='3')
+														label.star-rating__ico.fa.fa-star-o.fa-lg(for='star-rating-3', title='3 out of 5 stars')
+														input#star-rating-2.star-rating__input(type='radio', name='rating', value='2')
+														label.star-rating__ico.fa.fa-star-o.fa-lg(for='star-rating-2', title='2 out of 5 stars')
+														input#star-rating-1.star-rating__input(type='radio', name='rating', value='1')
+														label.star-rating__ico.fa.fa-star-o.fa-lg(for='star-rating-1', title='1 out of 5 stars')
+													.rate-count
+														span 126 голосов
+												.date-soc
+													p 15 декабря 2016
+													.socials-holder
+														ul
+															mixin socItem(src)
+																li
+																	a(href="#")
+																		img(src= src, alt= src)
+															+socItem('img/icons/vk-green.png')
+															+socItem('img/icons/twitter-green.png')
+															+socItem('img/icons/odnoklasniki-green.png')
+															+socItem('img/icons/instagram-green.png')
+															+socItem('img/icons/google+-green.png')
+															+socItem('img/icons/facebook-green.png')
+											.comment-text
+												p
+													|Очень часто, когда девушки плачут, они вовсе не хотят, чтобы ты решил проблему, а только, чтобы утешил.
+								.pagination-holder
+									ul.pagination
+										li
+											a(href="#").prev
+										li
+											a(href="#") 1
+										li
+											a(href="#") 2
+										li
+											a(href="#") 3
+										li
+											a(href="#") 4
+										li
+											a(href="#") ...
+										li
+											a(href="#") 1728
+										li
+											a(href="#").next
+								.answer-form
+									h4 Оставить отзыв
+									form(action="")
+										.book-rating-holder
+											.star-rating
+												.star-rating__wrap
+													input#star-rating-5.star-rating__input(type='radio', name='rating', value='5')
+													label.star-rating__ico.fa.fa-star-o.fa-lg(for='star-rating-5', title='5 out of 5 stars')
+													input#star-rating-4.star-rating__input(type='radio', name='rating', value='4')
+													label.star-rating__ico.fa.fa-star-o.fa-lg(for='star-rating-4', title='4 out of 5 stars')
+													input#star-rating-3.star-rating__input(type='radio', name='rating', value='3')
+													label.star-rating__ico.fa.fa-star-o.fa-lg(for='star-rating-3', title='3 out of 5 stars')
+													input#star-rating-2.star-rating__input(type='radio', name='rating', value='2')
+													label.star-rating__ico.fa.fa-star-o.fa-lg(for='star-rating-2', title='2 out of 5 stars')
+													input#star-rating-1.star-rating__input(type='radio', name='rating', value='1')
+													label.star-rating__ico.fa.fa-star-o.fa-lg(for='star-rating-1', title='1 out of 5 stars')
+											.rate-count
+												span Ваша оценка
+										.form-group
+											.inline-layout.col-2
+												.input-holder
+													input(type="text", placeholder='Имя')
+												.input-holder
+													input(type="text", placeholder='E-mail')
+											textarea(placeholder="Текст  отзыва")
+											.btns
+												button.button Отправить
+
+
+
+						.sale.book
+							.inline-layout.col-4
+								.sale-col
+									a(href="#")
+										.sale-item
+											.image-holder
+												img(src="img/content/sale-1.png", alt="")
+											.description
+												p
+													|Распродажа качественной женской обуви.
+								.sale-col
+									a(href="#")
+										.sale-item
+											.image-holder
+												img(src="img/content/sale-2.png", alt="")
+											.description
+												p
+													|Распродажа качественной женской обуви.
+								.sale-col
+									a(href="#")
+										.sale-item
+											.image-holder
+												img(src="img/content/sale-3.png", alt="")
+											.description
+												p
+													|Распродажа качественной женской обуви.
+								.sale-col
+									a(href="#")
+										.sale-item
+											.image-holder
+												img(src="img/content/sale-4.png", alt="")
+											.description
+												p
+													|Распродажа качественной женской обуви.
+
+
+							
+		include ./partials/footer.jade
+
+		include ./partials/scripts.jade

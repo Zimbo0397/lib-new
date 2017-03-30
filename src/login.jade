@@ -1,0 +1,121 @@
+doctype html
+html(lang='ru')
+	head
+		title Login
+
+		include ./partials/head.jade
+
+	body
+		include ./partials/noscript.jade
+		include ./partials/top-line-profile.jade
+
+
+		include ./partials/breadcrumbs.jade
+
+		.black-plate
+
+		section.content
+			.container
+				.content-body.inline-layout
+					.aside-open#aside-open
+					.aside-panel#aside-panel
+						.close-btn#aside-slose
+						.panel-1.popul
+							h3 Популярные Статьи
+							ul
+								li
+									a(href="#")
+										.image-holder
+											img(src="img/content/pop-1.png", alt="")
+										span 9 декабря 2016
+										p Какой формат книг вам подходит?
+								li
+									a(href="#")
+										.image-holder
+											img(src="img/content/pop-2.png", alt="")
+										span 1 декабля 2016
+										p 5 самых лучших книг, которые стоит прочитать зимними вечерами
+								li
+									a(href="#")
+										.image-holder
+											img(src="img/content/pop-3.png", alt="")
+										span 26 ноября 2016
+										p Топ-20 книг, о прочтении которых лгут чаще всего
+						.panel-1.announc
+							h3 Анонс
+							ul
+								li
+									a(href="#")
+										.image-holder
+											img(src="img/content/anounc-1.png", alt="")
+										p Что сделала бы Грейс?
+										span Джина Маккинон
+								li
+									a(href="#")
+										.image-holder
+											img(src="img/content/anounc-2.png", alt="")
+										p Леди из "Миссолонги"
+										span Колин Маккалоу
+
+					.content-holder
+						
+						.profile-top
+							h3 Вход
+						.profile-body
+							form(action="")
+								.add-info
+									.inline-layout
+										.forms-group
+											.form-group
+												label(for="") Логин:
+												input(type="text", placeholder="Фамилия")
+										.forms-group
+											.form-group
+												label(for="") Пароль:
+												input(type="text", placeholder="Телефон")
+
+								.add-info
+									.btns
+										a(href="#").button Войти
+
+
+						.sale.book
+							.inline-layout.col-4
+								.sale-col
+									a(href="#")
+										.sale-item
+											.image-holder
+												img(src="img/content/sale-1.png", alt="")
+											.description
+												p
+													|Распродажа качественной женской обуви.
+								.sale-col
+									a(href="#")
+										.sale-item
+											.image-holder
+												img(src="img/content/sale-2.png", alt="")
+											.description
+												p
+													|Распродажа качественной женской обуви.
+								.sale-col
+									a(href="#")
+										.sale-item
+											.image-holder
+												img(src="img/content/sale-3.png", alt="")
+											.description
+												p
+													|Распродажа качественной женской обуви.
+								.sale-col
+									a(href="#")
+										.sale-item
+											.image-holder
+												img(src="img/content/sale-4.png", alt="")
+											.description
+												p
+													|Распродажа качественной женской обуви.
+
+
+							
+		include ./partials/footer.jade
+
+		include ./partials/scripts.jade

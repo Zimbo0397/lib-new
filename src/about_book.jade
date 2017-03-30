@@ -1,0 +1,165 @@
+doctype html
+html(lang='ru')
+	head
+		title about_book
+		
+		include ./partials/head.jade
+
+	body
+		include ./partials/noscript.jade
+		include ./partials/top-line.jade
+		.black-plate
+
+		include ./partials/breadcrumbs.jade
+
+		section.content
+			.container
+				.content-body.inline-layout
+					.aside-open#aside-open
+					.aside-panel#aside-panel
+						.close-btn#aside-slose
+						.panel-1.popul
+							h3 Популярные Статьи
+							ul
+								li
+									a(href="#")
+										.image-holder
+											img(src="img/content/pop-1.png", alt="")
+										span 9 декабря 2016
+										p Какой формат книг вам подходит?
+								li
+									a(href="#")
+										.image-holder
+											img(src="img/content/pop-2.png", alt="")
+										span 1 декабля 2016
+										p 5 самых лучших книг, которые стоит прочитать зимними вечерами
+								li
+									a(href="#")
+										.image-holder
+											img(src="img/content/pop-3.png", alt="")
+										span 26 ноября 2016
+										p Топ-20 книг, о прочтении которых лгут чаще всего
+						.panel-1.announc
+							h3 Анонс
+							ul
+								li
+									a(href="#")
+										.image-holder
+											img(src="img/content/anounc-1.png", alt="")
+										p Что сделала бы Грейс?
+										span Джина Маккинон
+								li
+									a(href="#")
+										.image-holder
+											img(src="img/content/anounc-2.png", alt="")
+										p Леди из "Миссолонги"
+										span Колин Маккалоу
+								li
+									a(href="#")
+										.image-holder
+											img(src="img/content/anounc-3.png", alt="")
+										p Отбор
+										span Кира Касс
+
+					.content-holder
+						.book-ab
+							.book-ab-wrap
+								.top-book
+									.image-holder
+										img(src="img/content/p-book.png", alt="")
+									h3 Отбор
+									.book-rating-holder
+										.star-rating
+											.star-rating__wrap
+												input#star-rating-5.star-rating__input(type='radio', name='rating', value='5')
+												label.star-rating__ico.fa.fa-star-o.fa-lg(for='star-rating-5', title='5 out of 5 stars')
+												input#star-rating-4.star-rating__input(type='radio', name='rating', value='4')
+												label.star-rating__ico.fa.fa-star-o.fa-lg(for='star-rating-4', title='4 out of 5 stars')
+												input#star-rating-3.star-rating__input(type='radio', name='rating', value='3')
+												label.star-rating__ico.fa.fa-star-o.fa-lg(for='star-rating-3', title='3 out of 5 stars')
+												input#star-rating-2.star-rating__input(type='radio', name='rating', value='2')
+												label.star-rating__ico.fa.fa-star-o.fa-lg(for='star-rating-2', title='2 out of 5 stars')
+												input#star-rating-1.star-rating__input(type='radio', name='rating', value='1')
+												label.star-rating__ico.fa.fa-star-o.fa-lg(for='star-rating-1', title='1 out of 5 stars')
+										.rate-count
+											span 883 количество голосов
+									.book-nav
+										ul
+											li
+												a(href="#") О книге
+											li
+												a(href="#") Отзывы
+											li
+												a(href="#") Цитаты
+									.description
+										ul.book-des
+											li
+												p Автор: 
+													span Кира Касс
+											li
+												p Жанр: 
+													span Сказки
+											li
+												p Дата добавления: 
+													span 15/11/2014
+											li
+												p Языки книги: 
+													span Русский
+											li
+												p Кол-во страниц: 
+													span 430
+									.btns
+										a(href="#").button Читать
+										a(href="#").button.transp Слушать
+										a(href="#") В избранное
+
+								.comments
+									h4 О книге
+									.comments-body
+										.about
+											p
+												|«Отбор» — это первая книга из одноименной трилогии, написанной Кирой Касс. По жанру это роман-антиутопия, который по своему сюжету отдаленно напоминает историю о Золушке. Однако в интерпретации автора эта история обрастает новыми, современными, волнующими и жестокими подробностями и поворотами повествования. Главной героиней книги является девушка по имени Америка Сингер. На ее месте мечтали бы оказаться многие, ведь она — одна из 33 девушек, отобранных для участия в соревнованиях за право стать принцессой. Они будут бороться за любовь принца Максона, богатство и корону. Казалось бы, чего еще можно желать? Однако Америка не хочет участвовать в турнире, ведь она все еще влюблена в Аспена, бедного юношу, с которым пришлось бы тогда расстаться. Но когда она знакомится с принцем, в ее сердце закрадываются сомнения. Читать книгу очень удобно в нашей онлайн-библиотеке на сайте или в мобильном приложении. Надеемся, что это произведение придется вам по душе.
+
+
+
+
+						.sale.book
+							.inline-layout.col-4
+								.sale-col
+									a(href="#")
+										.sale-item
+											.image-holder
+												img(src="img/content/sale-1.png", alt="")
+											.description
+												p
+													|Распродажа качественной женской обуви.
+								.sale-col
+									a(href="#")
+										.sale-item
+											.image-holder
+												img(src="img/content/sale-2.png", alt="")
+											.description
+												p
+													|Распродажа качественной женской обуви.
+								.sale-col
+									a(href="#")
+										.sale-item
+											.image-holder
+												img(src="img/content/sale-3.png", alt="")
+											.description
+												p
+													|Распродажа качественной женской обуви.
+								.sale-col
+									a(href="#")
+										.sale-item
+											.image-holder
+												img(src="img/content/sale-4.png", alt="")
+											.description
+												p
+													|Распродажа качественной женской обуви.
+
+
+							
+		include ./partials/footer.jade
+
+		include ./partials/scripts.jade

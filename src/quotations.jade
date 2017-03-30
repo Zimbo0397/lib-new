@@ -1,0 +1,241 @@
+doctype html
+html(lang='ru')
+	head
+		title quotations
+
+		include ./partials/head.jade
+
+	body
+		include ./partials/noscript.jade
+		include ./partials/top-line.jade
+
+		include ./partials/breadcrumbs.jade
+
+		section.content
+			.container
+				.content-body.inline-layout
+					.aside-panel
+						.panel-1.popul
+							h3 Популярные Статьи
+							ul
+								li
+									a(href="#")
+										.image-holder
+											img(src="img/content/pop-1.png", alt="")
+										span 9 декабря 2016
+										p Какой формат книг вам подходит?
+								li
+									a(href="#")
+										.image-holder
+											img(src="img/content/pop-2.png", alt="")
+										span 1 декабля 2016
+										p 5 самых лучших книг, которые стоит прочитать зимними вечерами
+								li
+									a(href="#")
+										.image-holder
+											img(src="img/content/pop-3.png", alt="")
+										span 26 ноября 2016
+										p Топ-20 книг, о прочтении которых лгут чаще всего
+						.panel-1.announc
+							h3 Анонс
+							ul
+								li
+									a(href="#")
+										.image-holder
+											img(src="img/content/anounc-1.png", alt="")
+										p Что сделала бы Грейс?
+										span Джина Маккинон
+								li
+									a(href="#")
+										.image-holder
+											img(src="img/content/anounc-2.png", alt="")
+										p Леди из "Миссолонги"
+										span Колин Маккалоу
+								li
+									a(href="#")
+										.image-holder
+											img(src="img/content/anounc-3.png", alt="")
+										p Отбор
+										span Кира Касс
+
+					.content-holder
+						.book-ab
+							.book-ab-wrap
+								.top-book
+									.image-holder
+										img(src="img/content/p-book.png", alt="")
+									h3 Отбор
+									.book-rating-holder
+										.star-rating
+											.star-rating__wrap
+												input#star-rating-5.star-rating__input(type='radio', name='rating', value='5')
+												label.star-rating__ico.fa.fa-star-o.fa-lg(for='star-rating-5', title='5 out of 5 stars')
+												input#star-rating-4.star-rating__input(type='radio', name='rating', value='4')
+												label.star-rating__ico.fa.fa-star-o.fa-lg(for='star-rating-4', title='4 out of 5 stars')
+												input#star-rating-3.star-rating__input(type='radio', name='rating', value='3')
+												label.star-rating__ico.fa.fa-star-o.fa-lg(for='star-rating-3', title='3 out of 5 stars')
+												input#star-rating-2.star-rating__input(type='radio', name='rating', value='2')
+												label.star-rating__ico.fa.fa-star-o.fa-lg(for='star-rating-2', title='2 out of 5 stars')
+												input#star-rating-1.star-rating__input(type='radio', name='rating', value='1')
+												label.star-rating__ico.fa.fa-star-o.fa-lg(for='star-rating-1', title='1 out of 5 stars')
+										.rate-count
+											span 883 количество голосов
+									.book-nav
+										ul
+											li
+												a(href="#") О книге
+											li
+												a(href="#") Отзывы
+											li
+												a(href="#") Цитаты
+									.description
+										ul.book-des
+											li
+												p Автор: 
+													span Кира Касс
+											li
+												p Жанр: 
+													span Сказки
+											li
+												p Дата добавления: 
+													span 15/11/2014
+											li
+												p Языки книги: 
+													span Русский
+											li
+												p Кол-во страниц: 
+													span 430
+									.btns
+										a(href="#").button Читать
+										a(href="#").button.transp Слушать
+										a(href="#") В избранное
+
+								.comments
+									h4 Цитаты
+									.comments-body
+										.quotations
+											.quotation-item
+												p
+													|Очень часто, когда девушки плачут, они вовсе не хотят, чтобы ты решил проблему, а только, чтобы утешил.
+												.like
+													a(href="#")
+														i.fa.fa-heart
+														span 15   
+														span   В мои цитаты
+													.socials-holder
+														ul
+															mixin socItem(src)
+																li
+																	a(href="#")
+																		img(src= src, alt= src)
+															+socItem('img/icons/vk-green.png')
+															+socItem('img/icons/twitter-green.png')
+															+socItem('img/icons/odnoklasniki-green.png')
+															+socItem('img/icons/instagram-green.png')
+															+socItem('img/icons/google+-green.png')
+															+socItem('img/icons/facebook-green.png')
+											.quotation-item
+												p
+													|Если ты считаешь, что не сможешь полюбить меня, с твоей стороны милосерднее сказать об этом сейчас.
+												.like
+													a(href="#")
+														i.fa.fa-heart
+														span 11   
+														span   В мои цитаты
+													.socials-holder
+														ul
+															mixin socItem(src)
+																li
+																	a(href="#")
+																		img(src= src, alt= src)
+															+socItem('img/icons/vk-green.png')
+															+socItem('img/icons/twitter-green.png')
+															+socItem('img/icons/odnoklasniki-green.png')
+															+socItem('img/icons/instagram-green.png')
+															+socItem('img/icons/google+-green.png')
+															+socItem('img/icons/facebook-green.png')
+											.quotation-item
+												p
+													|Если тщательно спланировать то, что спланировать можно, проще будет справляться с тем, что спланировать нельзя.
+												.like
+													a(href="#")
+														i.fa.fa-heart
+														span 5   
+														span   В мои цитаты
+													.socials-holder
+														ul
+															mixin socItem(src)
+																li
+																	a(href="#")
+																		img(src= src, alt= src)
+															+socItem('img/icons/vk-green.png')
+															+socItem('img/icons/twitter-green.png')
+															+socItem('img/icons/odnoklasniki-green.png')
+															+socItem('img/icons/instagram-green.png')
+															+socItem('img/icons/google+-green.png')
+															+socItem('img/icons/facebook-green.png')
+											.quotation-item
+												p
+													|Спесивый сопляк на глазах у всей страны будет выбирать из кучи претенденток пустышку посмазливее, чтобы всю оставшуюся жизнь она безмолвной куклой маячила рядом с ним в телевизионных выступлениях, хотелось визжать. Что может быть унизительней?
+												.like
+													a(href="#")
+														i.fa.fa-heart
+														span 9   
+														span   В мои цитаты
+													.socials-holder
+														ul
+															mixin socItem(src)
+																li
+																	a(href="#")
+																		img(src= src, alt= src)
+															+socItem('img/icons/vk-green.png')
+															+socItem('img/icons/twitter-green.png')
+															+socItem('img/icons/odnoklasniki-green.png')
+															+socItem('img/icons/instagram-green.png')
+															+socItem('img/icons/google+-green.png')
+															+socItem('img/icons/facebook-green.png')
+															
+
+
+
+
+						.sale.book
+							.inline-layout.col-4
+								.sale-col
+									a(href="#")
+										.sale-item
+											.image-holder
+												img(src="img/content/sale-1.png", alt="")
+											.description
+												p
+													|Распродажа качественной женской обуви.
+								.sale-col
+									a(href="#")
+										.sale-item
+											.image-holder
+												img(src="img/content/sale-2.png", alt="")
+											.description
+												p
+													|Распродажа качественной женской обуви.
+								.sale-col
+									a(href="#")
+										.sale-item
+											.image-holder
+												img(src="img/content/sale-3.png", alt="")
+											.description
+												p
+													|Распродажа качественной женской обуви.
+								.sale-col
+									a(href="#")
+										.sale-item
+											.image-holder
+												img(src="img/content/sale-4.png", alt="")
+											.description
+												p
+													|Распродажа качественной женской обуви.
+
+
+							
+		include ./partials/footer.jade
+
+		include ./partials/scripts.jade

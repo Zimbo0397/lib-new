@@ -1,0 +1,85 @@
+section.header
+	.top-line
+		.container
+			.inline-layout.col-2
+				.brand-holder
+					a(href="#") Books-online
+					ul.socials-holder
+						mixin socItem(src)
+							li
+								a(href="#")
+									img(src= src, alt= src)
+						+socItem('img/icons/vk.png')
+						+socItem('img/icons/twitter.png')
+						+socItem('img/icons/odnoklasniki.png')
+						+socItem('img/icons/instagram.png')
+						+socItem('img/icons/google+.png')
+						+socItem('img/icons/facebook.png')
+
+					.my-profile-top
+						a(href="#")
+							span Мой профиль
+							.image-holder
+								img(src="img/content/comment-1.png", alt="")
+				.admin-panel
+					ul
+						li
+							a(href="#")
+								.image-holder
+									img(src="img/icons/login.png", alt="")
+								span Вход
+						li
+							a(href="#")
+								.image-holder
+									img(src="img/icons/bookmarks.png", alt="")
+								span В закладки	
+						li
+							a(href="#")
+								.image-holder
+									img(src="img/icons/add-book.png", alt="")
+								span Добавить книгу
+	.nav-holder
+		.container
+			a(href="#").mobile-nav-btn#mobile-nav-btn
+				span
+				span
+				span
+			nav.nav
+				ul
+					li
+						a(href="#") Главная
+					li
+						a(href="#") Блог
+					li
+						a(href="#") Ayдиокниги
+					li
+						a(href="#") TOП 100
+					li
+						a(href="#") Подборки
+					li
+						a(href="#") Новинки
+			nav.nav.mobile#nav
+				ul
+					li
+						a(href="#") Главная
+					li
+						a(href="#") Блог
+					li
+						a(href="#") Ayдиокниги
+					li
+						a(href="#") TOП 100
+					li
+						a(href="#") Подборки
+					li
+						a(href="#") Новинки
+					li
+						.search-holder.mobile
+							input(type="text" placeholder="Введите запрос")
+							a(href="#")
+								img(src="img/icons/icon_zoom-copy.png", alt="")
+			.search-holder
+				input(type="text" placeholder="Введите запрос")
+				a(href="#")
+					img(src="img/icons/icon_zoom-copy.png", alt="")
+
+
