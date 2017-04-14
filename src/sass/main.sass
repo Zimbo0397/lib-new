@@ -35,6 +35,30 @@ body
 		font-size: 2.7em
 		display: inline-block
 		vertical-align: middle
+		color: #d0ab51
+		position: relative
+		margin-bottom: 16px
+		span
+			display: inline-block
+			position: absolute
+			bottom: -8px
+			font-size: 17px
+			line-height: 16px
+			white-space: nowrap
+			left: 3px
+			text-transform: uppercase
+			@media #{$media-lp-max}
+				font-size: 14px
+		// &:after
+		// 	content: 'онлайн библиотека'
+		// 	position: absolute
+		// 	bottom: -18px
+		// 	left: 50%
+		// 	background: url(../img/icons/logo-2.png) 50% 50% no-repeat
+		// 	background-size: cover
+		// 	height: 30px
+		// 	width: 100px
+		// 	transform: translateX(-50%)
 		@media #{$media-lp-max}
 			font-size: 2.2em
 
@@ -1348,7 +1372,7 @@ body
 	span
 		height: 5px
 		width: 40px
-		background: #b9b8b8
+		background: #fff
 		display: block
 		margin-bottom: 5px
 
